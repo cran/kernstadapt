@@ -1,6 +1,6 @@
 Package: kernstadapt
 Title: Spatio-Temporal Adaptive Kernel Estimators for Intensities
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Jonatan A", "González", , "jonathan.gonzalez@kaust.edu.sa", 
             role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2296-5271")),
@@ -12,15 +12,15 @@ Description: Adaptive estimation of the first-order intensity function of a spat
 License: MIT + file LICENSE
 Language: en-GB
 Encoding: UTF-8
-RoxygenNote: 7.2.1
-Imports: misc3d, sparr, spatstat.core, spatstat.geom, spatstat.random,
-        spatstat.utils
+RoxygenNote: 7.2.2
+Imports: misc3d, sparr, spatstat.explore, spatstat.geom,
+        spatstat.random, spatstat.utils
 Suggests: knitr, rmarkdown, ggplot2
 VignetteBuilder: knitr
 Depends: R (>= 3.5)
 NeedsCompilation: no
-Packaged: 2022-09-19 11:16:45 UTC; gonzalja
+Packaged: 2022-11-14 14:11:19 UTC; gonzalja
 Author: Jonatan A González [aut, cre] (<https://orcid.org/0000-0002-2296-5271>),
   Paula Moraga [aut] (<https://orcid.org/0000-0001-5266-0201>)
 Repository: CRAN
-Date/Publication: 2022-09-20 08:56:12 UTC
+Date/Publication: 2022-11-15 22:50:02 UTC
