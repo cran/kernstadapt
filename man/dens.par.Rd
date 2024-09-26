@@ -25,7 +25,7 @@ dens.par(
 
 \item{dimt}{Temporal bin vector dimension. The default is 128.}
 
-\item{bw.xy}{Numeric vector of spatial smoothing bandwidths for each point in \code{X}. By default this is computed using \link[spatstat.explore]{bw.abram}.}
+\item{bw.xy}{Numeric vector of spatial smoothing bandwidths for each point in \code{X}. By default this is computed using \link[spatstat.univar]{bw.abram}.}
 
 \item{bw.t}{Numeric vector of temporal smoothing bandwidths for each point in \code{t}. By default this is computed using \link{bw.abram.temp}.}
 
@@ -56,7 +56,7 @@ plot(spatstat.geom::as.solist(stIntensity[13:16]), ncols = 4,
 \references{
 González J.A. and Moraga P. (2018)
 An adaptive kernel estimator for the intensity function of spatio-temporal point processes
-\url{https://arxiv.org/pdf/2208.12026.pdf}
+\url{http://arxiv.org/pdf/2208.12026}
 }
 \author{
 Jonatan A. González

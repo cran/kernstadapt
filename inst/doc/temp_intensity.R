@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 #  library(kernstadapt)
 #  library(ggplot2)
 
-## ---- ,fig.height = 3, fig.width= 5, fig.align="center"-----------------------
+## ----,fig.height = 3, fig.width= 5, fig.align="center"------------------------
 #  # Setting a simulation of temporal point pattern with a hotspot
 #  # intensity for Nt points
 #  Nt <- 2000
@@ -65,13 +65,13 @@ knitr::opts_chunk$set(
 #  ggplot(data = PD, aes(x = x, y = intensity, group = estimator, colour = estimator)) +
 #    geom_line() + theme(axis.title.x = element_blank())
 
-## ---- ,fig.height = 5, fig.width= 7, fig.align="center"-----------------------
+## ----,fig.height = 5, fig.width= 7, fig.align="center"------------------------
 #  # Load aegiss data-set and plotting
 #  data(aegiss)
 #  plot(aegiss, bg = rainbow(512), pch = 21, cex = 1,
 #       main = "Gastrointestinal desease cases in Hampshire")
 
-## ---- ,fig.height = 3, fig.width= 5.5, fig.align="center"---------------------
+## ----,fig.height = 3, fig.width= 5.5, fig.align="center"----------------------
 #  # Fixed bandwidth estimate
 #  ti <- aegiss$marks
 #  Nt <- aegiss$n

@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   eval = FALSE,
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 #                         separable = F, model = "gneiting", scale = c(0.5, 0.8),
 #                         param = c(1, 1, .1, 0.1, 1, 2), var.grf = 2, mean.grf = 1)
 
-## ---- fig.height = 4.5, fig.align="center"------------------------------------
+## ----fig.height = 4.5, fig.align="center"-------------------------------------
 #  # Spatstat format
 #  XX <- ppp(x = logGaussianPP$xyt[, 1], y = logGaussianPP$xyt[, 2],
 #            marks = logGaussianPP$xyt[, 3], window = owin())
@@ -56,7 +56,7 @@ knitr::opts_chunk$set(
 #                         ngroups.xy = 8, ngroups.t = 4,
 #                         at = "bins")
 
-## ---- fig.align="center"------------------------------------------------------
+## ----fig.align="center"-------------------------------------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(13, 17, 21, 31, 50)
 #  
@@ -72,7 +72,7 @@ knitr::opts_chunk$set(
 #  # Loading dataset
 #  data("amazon")
 
-## ---- fig.height = 4.5, fig.align="center"------------------------------------
+## ----fig.height = 4.5, fig.align="center"-------------------------------------
 #  # Extract a sample of 5000 data points
 #  AmazonReduced <- amazon[sample.int(amazon$n, 5000)]
 #  
@@ -111,7 +111,7 @@ knitr::opts_chunk$set(
 #                         bw.xy = bwS, bw.t = bwt,
 #                         at = "bins")
 
-## ---- fig.align="center"------------------------------------------------------
+## ----fig.align="center"-------------------------------------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(12, 18, 23, 31, 55)
 #  
@@ -123,7 +123,7 @@ knitr::opts_chunk$set(
 #  plot.imlist(CN, ncols = 5, main = 'Classic fixed-bandwidth estimate')
 #  plot.imlist(AN, ncols = 5, main = 'Adaptive non-separable estimate')
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  animation::saveVideo(
 #    for(i in 1:length(adapt.dens)){
 #      plot(adapt.dens[[i]], main = paste("Time",i))

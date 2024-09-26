@@ -4,12 +4,14 @@
 \alias{bw.abram.temp}
 \title{Abramson's adaptive temporal bandwidths}
 \usage{
-bw.abram.temp(t, h0 = NULL, nt = 128, trim = NULL, at = "points")
+\method{bw.abram}{temp}(X, h0 = NULL, ..., nt = 128, trim = NULL, at = "points")
 }
 \arguments{
-\item{t}{A vector (a temporal point pattern) from which the bandwidths should be computed.}
+\item{X}{A vector (a temporal point pattern) from which the bandwidths should be computed.}
 
 \item{h0}{The global smoothing bandwidth. The default is Silverman's rule of thumb (bw.nrd0).}
+
+\item{...}{Additional arguments passed to smoother to control the type of smoothing.}
 
 \item{nt}{The number of equally spaced points at which the temporal density is to be estimated.}
 
@@ -58,7 +60,7 @@ Chapman and Hall, New York.
 
 González J.A. and Moraga P. (2018)
 An adaptive kernel estimator for the intensity function of spatio-temporal point processes
-\url{https://arxiv.org/pdf/2208.12026.pdf}
+\url{https://arxiv.org/pdf/2208.12026}
 }
 \author{
 Jonatan A. González

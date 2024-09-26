@@ -5,7 +5,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ---- message=FALSE-----------------------------------------------------------
+## ----message=FALSE------------------------------------------------------------
 #  # Main package
 #  library(kernstadapt)
 #  
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 #  library(spatstat)
 #  library(sparr)
 
-## ---- fig.height = 3, fig.align="center", fig.width=9-------------------------
+## ----fig.height = 3, fig.align="center", fig.width=9--------------------------
 #  data(aegiss, santander, amazon)
 #  par(mfrow = c(1,3))
 #  
@@ -45,7 +45,7 @@ knitr::opts_chunk$set(
 #                            bw.xy = bw.xy.santander,
 #                            bw.t = bw.t.santander)
 
-## ---- fig.align="center", fig.height = 5, fig.width=9-------------------------
+## ----fig.align="center", fig.height = 5, fig.width=9--------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(12, 18, 23, 64)
 #  
@@ -67,7 +67,7 @@ knitr::opts_chunk$set(
 #                         bw.t = bw.t.santander,
 #                         ngroups.xy = 20, ngroups.t = 10)
 
-## ---- fig.align="center", fig.height = 5, fig.width=9-------------------------
+## ----fig.align="center", fig.height = 5, fig.width=9--------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(12, 18, 23, 64)
 #  
@@ -89,7 +89,7 @@ knitr::opts_chunk$set(
 #                        bw.t = bw.t.aegiss,
 #                        at = "bins")
 
-## ---- fig.align="center", fig.height = 3, fig.width=9-------------------------
+## ----fig.align="center", fig.height = 3, fig.width=9--------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(2, 5, 8, 16)
 #  
@@ -109,7 +109,7 @@ knitr::opts_chunk$set(
 #                         dimyx = 128, dimt = 64,
 #                         ngroups.xy = 20, ngroups.t = 10)
 
-## ---- fig.align="center", fig.height = 3, fig.width=9-------------------------
+## ----fig.align="center", fig.height = 3, fig.width=9--------------------------
 #  # We select some fixed times for visualisation
 #  I <- c(12, 18, 23, 64)
 #  
